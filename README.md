@@ -1,4 +1,7 @@
 #  使用Google Colaboratory跑深度學習
+南華大學 跨領域-人工智慧期中報告  
+11024201 趙青益  
+11024114 翁莊堡  
 ## 使用Colaboratory
 點選進入Google雲端硬碟，如下介面 : 
 ![image](https://github.com/qzhao0805/mid/blob/main/eeb56691ae479699fdd58d060717be05.png)  
