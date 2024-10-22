@@ -66,6 +66,7 @@ tf.test.gpu_device_name()
 ```
 !conda info --env
 ```
+
 ![image](https://github.com/qzhao0805/mid/blob/main/9.png)  
 ## 驗證pytorch是否能夠使用  
 首先直接編寫程式碼進行驗證能否直接使用自己安裝的conda python:  
@@ -73,25 +74,34 @@ tf.test.gpu_device_name()
 import torch  
 print(torch.version)
 ```
+
 ## 安裝MMDetection  
 **安裝mmcv**  
 ```
-git clone https://github.com/open-mmlab/mmcv.git  
-cd mmcv  
-pip install /content/mmcv/.
+!git clone https://github.com/open-mmlab/mmcv.git  
+!cd mmcv  
+!pip install -U openmim
+!mim install mmcv
 ```
+
 **安装cpython等需求包**  
 ```
-https://gitee.com/zyp521/upload_image/raw/master/cGUR6D.png
-``` 
+!https://gitee.com/zyp521/upload_image/raw/master/cGUR6D.png
+```
+
 **安裝mmdetection**  
 官方文件的安裝方法：
 ```
-git clone https://github.com/open-mmlab/mmdetection.git  
-cd mmdetection  
-pip install -r requirements/build.txt  
-pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"  
-pip install -v -e . # or "python setup.py develop"
+!git clone https://github.com/open-mmlab/mmdetection.git  
+!cd mmdetection  
+!pip install -r requirements/build.txt  
+!pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"  
+!pip install -v -e . # or "python setup.py develop"
+```
+我們使用:
+```
+!cp /content/mmcv/mmcv/version.py /content/mmcv
+!python /content/mmcv/setup.py install
 ```
   
 到此，我們就完成了mmdetection及其依賴函式庫的安裝。  
