@@ -83,7 +83,8 @@ print(torch.version)
 !pip install -U openmim
 !mim install mmcv
 ```
-![image](https://github.com/qzhao0805/mid/blob/main/mmcv1.png) 
+![image](https://github.com/qzhao0805/mid/blob/main/mmcv1-1.png) 
+![image](https://github.com/qzhao0805/mid/blob/main/mmcv1-2.png) 
 
 **安装cpython等需求包**  
 ```
@@ -104,8 +105,7 @@ print(torch.version)
 !cp /content/mmcv/mmcv/version.py /content/mmcv
 !python /content/mmcv/setup.py install
 ```
-![image](https://github.com/qzhao0805/mid/blob/main/mmcv2-1.png) 
-![image](https://github.com/qzhao0805/mid/blob/main/mmcv2-2.png) 
+![image](https://github.com/qzhao0805/mid/blob/main/mmcv2.png) 
 
 到此，我們就完成了mmdetection及其依賴函式庫的安裝。  
 有一個比較大的缺陷需要聲明一下，就是如果你超過12小時不登入Colaboratory的話，google會自動將你的伺服器重置分配給別人，你的資料和程式碼都被自動清楚了。  
